@@ -10,11 +10,3 @@ resource "aws_instance" "ops" {
     Name = "guru"
   }
 }
-
-terraform {
-  backend "s3" {
-    bucket = "guru3399"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
-  }
-}        
